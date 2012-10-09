@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file is part of liferay-spring-extensions.
+
+liferay-spring-extensions is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+liferay-spring-extensions is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along with
+liferay-spring-extensions. If not, see <http://www.gnu.org/licenses />.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>permeance-parent</artifactId>
+        <groupId>au.com.permeance</groupId>
+        <version>0.5</version>
+    </parent>
+
+    <groupId>au.com.permeance</groupId>
+    <artifactId>liferay-spring-extensions</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1-SNAPSHOT</version>
+
+    <name>liferay-spring-extensions</name>
+    <description>A set of extensions for simplifying liferay development with spring</description>
+    <url>http://permeance.github.com/liferay-spring-extensions</url>
+    <inceptionYear>2012</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>martinlau</id>
+            <name>Martin Lau</name>
+            <email>martin.lau@permeance.com.au</email>
+            <url>http://hum.ph</url>
+            <organization>Permeance Technologies</organization>
+            <organizationUrl>http://www.permeance.com.au</organizationUrl>
+            <roles>
+                <role>Project creator</role>
+            </roles>
+            <timezone>+10</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:permeance/liferay-spring-extensions.git</connection>
+        <developerConnection>scm:git:git@github.com:permeance/liferay-spring-extensions.git</developerConnection>
+        <url>https://github.com/permeance/liferay-spring-extensions</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/permeance/liferay-spring-extensions/issues</url>
+        <system>github</system>
+    </issueManagement>
+
+    <ciManagement>
+        <system>jenkins</system>
+        <url>https://buildhive.cloudbees.com/job/permeance/job/liferay-spring-extensions/</url>
+        <notifiers>
+            <notifier>
+                <address>martin.lau@permeance.com.au</address>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+
+    <properties>
+        <!-- Dependency versions -->
+        <liferay.version>6.1.0</liferay.version>
+        <spring.version>3.1.2.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.liferay.portal</groupId>
+            <artifactId>portal-service</artifactId>
+            <version>${liferay.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
