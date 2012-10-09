@@ -78,6 +78,7 @@ liferay-spring-extensions. If not, see <http://www.gnu.org/licenses />.
         <!-- Dependency versions -->
         <liferay.version>6.1.0</liferay.version>
         <spring.version>3.1.2.RELEASE</spring.version>
+        <testng.version>6.7</testng.version>
     </properties>
 
     <dependencies>
@@ -86,6 +87,12 @@ liferay-spring-extensions. If not, see <http://www.gnu.org/licenses />.
             <artifactId>portal-service</artifactId>
             <version>${liferay.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
