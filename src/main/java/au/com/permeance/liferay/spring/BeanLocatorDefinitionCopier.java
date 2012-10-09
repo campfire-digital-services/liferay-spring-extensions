@@ -134,7 +134,7 @@ public class BeanLocatorDefinitionCopier extends ApplicationObjectSupport {
                 continue;
             }
 
-            LOG.info(format("Copying bean %s", name));
+            LOG.info(format("Copying bean definition %s", name));
             singletonBeanRegistry.registerSingleton(name, bean);
         }
     }
