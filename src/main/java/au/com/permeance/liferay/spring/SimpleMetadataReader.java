@@ -17,8 +17,6 @@ liferay-spring-extensions. If not, see <http://www.gnu.org/licenses />.
 package au.com.permeance.liferay.spring;
 
 import org.springframework.core.io.Resource;
-import org.springframework.core.type.AnnotationMetadata;
-import org.springframework.core.type.ClassMetadata;
 import org.springframework.core.type.StandardAnnotationMetadata;
 import org.springframework.core.type.classreading.MetadataReader;
 
@@ -58,7 +56,7 @@ public class SimpleMetadataReader implements MetadataReader {
      * @return returns {@link #standardAnnotationMetadata}
      */
     @Override
-    public final ClassMetadata getClassMetadata() {
+    public final StandardAnnotationMetadata getClassMetadata() {
         return standardAnnotationMetadata;
     }
 
@@ -68,7 +66,7 @@ public class SimpleMetadataReader implements MetadataReader {
      * @return returns {@link #standardAnnotationMetadata}
      */
     @Override
-    public final AnnotationMetadata getAnnotationMetadata() {
+    public final StandardAnnotationMetadata getAnnotationMetadata() {
         return standardAnnotationMetadata;
     }
 
